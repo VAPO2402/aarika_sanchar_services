@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form class="contact-details" name="cont" method="POST" onsubmit="sendEmal(); reset(); return false">
+            <input type="text" name="Name" placeholder="Full Name" required class="fields" id="name"></input>
+
+            <input type="text" name="Email" placeholder="Email" required id="email" class="fields"></input>
+
+            <textarea name="Message" placeholder="Type in your Query.." class="fields" id="query"></textarea>
+
+            <button type="submit" id="btn" onsubmit="document.getElementById('btn').innerHTML='Sent!!';">Send</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmal(){
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "pratyushkumardelhi55@gmail.com",
+            Password : "THE  MAN  PRATYUSH1.",
+            To : "pratyushkumardelhi55@gmail.com",
+            From : doc.getElementById("email").value,
+            Subject : "New Content Form Enquiry",
+            Body : "Name" + doc.getElementById("name").value + "<br> Email: " + doc.getElementById("email").value + "<br> Query: " + doc.getElementById("query").value
+        }).then(
+            message => alert("MEssage sent successfully")
+        );
+    }
+    </script>
+</body>
+</html>

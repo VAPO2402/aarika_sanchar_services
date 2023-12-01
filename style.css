@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#e91e63, #ffc197);
+    clip-path: circle(22% at 30% 20%);
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ffffff, #da00ff);
+    clip-path: circle(20% at 70% 90%);
+}
+
+.container{
+    padding: 2rem;
+    position: relative;
+    background: rgba(255,255,255,0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0,.2);
+}
+
+.container .contact-details{
+    min-width: 20rem;
+    display: block;
+    position: relative;
+}
+
+.container .contact-details .fields{
+    /* min-width: 20rem; */
+    justify-content: space-between;
+    padding: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    display: block;
+    place-items: center;
+    height: 75px;
+    color: #ffff;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.5);
+    transition: 0.5s;
+    background: transparent;
+}
+
+.container .contact-details .fields:hover{
+    transition: 0s;
+    background: rgba(255,255,255,0.05);
+}
+
+.container .contact-details .fields:active{
+    color: #192f00;
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 20rem;
+}
+
+.container .contact-details button{
+    background: transparent;
+    padding: 1rem;
+    border-radius: 1rem;
+    min-width: 6rem;
+}
+
+.container .contact-details button:active{
+    background-color: #52065fef;
+}
