@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text&display=swap');
+
+.background{
+    background-color: white;
+    font-family: 'Wix Madefor Text', sans-serif;
+
+    >.form{
+        display: flex;
+        margin: 4rem 2rem 4rem 2rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        border: solid black 2px;
+        box-shadow: 0 0 0px 0 black,
+ 	  inset -100px 10px 80px 20px transparent,
+ 	  0 0 40px 10px black,
+ 	  inset 0 0 1px 0 transparent;
+
+        >.content{
+            width: 50%;
+            background-color: #C2095A;
+            padding: 2.5rem 2.5rem;
+            border-radius: 1rem;
+
+            >h1{
+                margin-bottom: 1rem;
+            }
+
+            >p{
+                font-weight: 400;
+            }
+
+            >.personal-details{
+                font-weight: 600;
+                margin-top: 3.5rem;
+
+                >.business-no{
+                    margin: 2rem 0;
+                }
+
+                >.business-mail{
+                    margin: 2rem 0;
+                }
+
+                >.address{
+                    margin: 2rem 0;
+                }
+            }
+
+            >.socials{
+
+            }
+        }
+
+        >.contact{
+            width: 50%;
+
+            >.name{
+                margin: 2rem 2.5rem 0 3rem;
+                display: flex;
+                color: black;
+
+                >.first{
+                    display: grid;
+
+                    >span{
+                        font-size: 0.9rem;
+                        margin-left: 0.4rem;
+                    }
+
+                    >.first-name{
+                        min-width: 17rem;
+                        border-radius: 0.5rem;
+                        border: solid 2px;
+                        padding: 1rem;
+                    }
+
+                    >.first-name:hover{
+                        transition: 1.1s;
+                        border-color: transparent transparent darkblue transparent;
+                        scale: 103%;
+                    }
+
+                    >.first-name:focus{
+                        border: solid 2px;
+                        border-color: transparent transparent darkblue transparent;
+                        scale: 103%;
+                    }
+                }
+
+                >.last{
+                    margin-left: 4rem;
+                    display: grid;
+
+                    >span{
+                        font-size: 0.9rem;
+                        margin-left: 0.4rem;
+                    }
+
+                    >.last-name{
+                        min-width: 17rem;
+                        border-radius: 0.5rem;
+                        border: solid 2px;
+                        padding: 1rem;
+                    }
+
+                    >.last-name:hover{
+                        transition: 0.7s;
+                        border-color: transparent transparent darkblue transparent;
+                        scale: 103%;
+                    }
+
+                    >.last-name:focus{
+                        border: solid 2px;
+                        border-color: transparent transparent darkblue transparent;
+                        scale: 103%;
+                    }
+                }
+            }
+
+            >.details{
+                margin: 2rem 2.5rem 0 3rem;
+                display: flex;
+                color: black;
+
+                >.mail{
+                    display: grid;
+
+                    >span{
+                        font-size: 0.9rem;
+                        margin-left: 0.4rem;
+                    }
+
+                    >.email{
+                        min-width: 17rem;
+                        border-radius: 0.5rem;
+                        border: solid 2px;
+                        padding: 1rem;
+                    }
+
+                    >.email:hover{
+                        transition: 1.1s;
+                        border-color: transparent transparent darkblue transparent;
+                        scale: 103%;
+                    }
+
+                    >.email:focus{
+                        border: solid 2px;
+                        border-color: transparent transparent darkblue transparent;
+                        scale: 103%;
+                    }
+                }
+
+                >.phone-no{
+                    margin-left: 4rem;
+                    display: grid;
+
+                    >span{
+                        font-size: 0.9rem;
+                        margin-left: 0.4rem;
+                    }
+
+                    >.phone{
+                        min-width: 17rem;
+                        border-radius: 0.5rem;
+                        border: solid 2px;
+                        padding: 1rem;
+                    }
+
+                    >.phone:hover{
+                        transition: 0.7s;
+                        border-color: transparent transparent darkblue transparent;
+                        scale: 103%;
+                    }
+
+                    >.phone:focus{
+                        border: solid 2px;
+                        border-color: transparent transparent darkblue transparent;
+                        scale: 103%;
+                    }
+                }
+            }
+
+            >.message{
+                margin: 2rem 2.5rem 0 3rem;
+                display: grid;
+                color: black;
+
+                >span{
+                    font-size: 0.9rem;
+                    margin-left: 0.4rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                >textarea{
+                    border-radius: 0.5rem;
+                    padding: 1rem;
+                    min-height: 10rem;
+                    margin-right: 3rem;
+                    border: solid 2px;
+                }
+
+                >textarea:hover{
+                    transition: 0.7s;
+                    scale: 103%;
+                }
+
+                >textarea:focus{
+                    transition: 0.7s;
+                    scale: 103%;
+                }
+            }
+
+            >button{
+                margin: 3rem 0 2rem 15rem;
+                border-radius: 1rem;
+                background-color: #FEB95F;
+                padding: 1rem 3rem;
+                border: solid #FEB95F 1px;
+            }
+
+            >button:hover{
+                scale: 110%;
+                transition: 0.5s;
+            }
+        }
+    }
+}
