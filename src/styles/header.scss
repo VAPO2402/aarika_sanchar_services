@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;700;800&display=swap');
+
+nav{
+    display: flex;
+    font-family: 'Wix Madefor Display';
+    padding: 1rem;
+
+    >.aarika{
+        width: 15%;
+        color: palevioletred;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    >.links{
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+        color: black;
+        font-weight: 500;
+        padding-top: 0.7rem;
+        padding-left: 8rem;
+
+        >.hashes:hover{
+            text-decoration: underline;
+            scale: 110%;
+            transition: 0.5s;
+            color: grey;
+        }
+    }
+
+    >.demo{
+        width: 15%;
+    }
+}
