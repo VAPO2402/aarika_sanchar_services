@@ -24,7 +24,7 @@ const Header = () => {
         
       </div>
       <div className="demo">
-        <Button paddingLeft={10} paddingRight={10}>Demo</Button>
+        <Button paddingLeft={10} paddingRight={10} colorScheme='green'>Demo</Button>
       </div>
     </nav>
     </>

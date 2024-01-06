@@ -55,7 +55,7 @@ main{
                 padding-bottom: 2.5rem;
 
                 >span{
-                    font-weight: 800;
+                    color: #2E8B57;
                 }
             }
 
@@ -266,7 +266,7 @@ main{
             }
         }
 
-        >.red-bar{
+        >.colour-bar{
             background: #2E8B57;
             padding: 3rem 9rem;
 
@@ -281,16 +281,18 @@ main{
                     margin-top: -0.2rem;
                     margin-left: 0.3rem;
                     padding: 1rem;
-                    background: transparent;
-                    border: solid yellow 2px;
+                    background: #E5E4E2;
+                    border: none;
                     border-radius: 1rem;
                     font-size: 1.2rem;
+                    color: black;
+                    font-weight: 500;
                 }
 
                 >button:hover{
                     transition: 0.5s;
-                    background: yellow;
-                    color: black;
+                    background: darkgreen;
+                    color: white;
                 }
             }
         }
@@ -347,24 +349,25 @@ main{
 
         >h1{
             font-size: 3rem;
-            font-weight: 700;
+            font-weight: 500;
             word-spacing: 0.5rem;
             letter-spacing: 0.1rem;
             padding-bottom: 2rem;
 
             >span{
-                color: red;
+                color: #2E8B57;
             }
         }
 
         >p{
             font-size: 1.1rem;
-            color: grey;
+            color: dimgrey;
             padding: 0 10rem;
         }
 
         >.table{
             margin: 0 8rem;
+            padding-bottom: 5rem;
 
             >.tab{
                 padding: 2rem 0;
@@ -380,13 +383,13 @@ main{
                 text-align: left;
                 padding: 2.5rem 1rem 2rem 6rem;
                 width: 50%;
-                background: rgb(63, 60, 60);
-                color: white;
+                background: #E5E4E2;
+                color: black;
                 font-size: 3.8rem;
 
                 >span{
-                    background: rgb(63, 60, 60);
-                    color: #ff4040;
+                    background: #E5E4E2;
+                    color: #2E8B57;
                 }
             }
 
@@ -394,21 +397,25 @@ main{
                 text-align: left;
                 color: white;
                 width: 50%;
-                background: #ff4040;
+                background: #2E8B57;
                 font-size: 1.1rem;
                 padding: 3.5rem 2rem 2rem 3rem;
 
                 >span{
-                    background: #ff4040;
+                    background: #2E8B57;
                     font-weight: 900;
                 }
                 
 
                 >button{
-                    border: solid black 1px;
+                    border: none;
                     border-radius: 1rem;
                     padding: 1rem 2rem 1rem 2rem;
-                    background: red;
+                    background: #177245 ;
+                }
+
+                >button:hover{
+                    background: #E5E4E2;
                 }
             }
         }
@@ -421,7 +428,7 @@ main{
             font-size: 2.5rem;
 
             >span{
-                font-weight: 900;
+                color: #2E8B57;
             }
         }
 
@@ -447,16 +454,17 @@ main{
 
             >.details-input{
                 width: 50%;
+                padding-top: 5.5rem;
 
                 >form{
                     display: block;
 
                     >.text{
-                        color: grey;
+                        color: dimgrey;
                         
                         >span{
-                            font-weight: 700;
-                            color: black;
+                            font-size: 1.5rem;
+                            color: #2E8B57;
                         }
                     }
 
@@ -584,12 +592,18 @@ main{
 
                     >button{
                         border-radius: 1rem;
-                        padding: 0.4rem 2rem;
-                        background: lightskyblue;
-                        border: solid lightblue 1px;
+                        padding: 0.7rem 2rem;
+                        background: #2E8B57;
+                        border: none;
+                        color: white;
+                    }
+
+                    >button:active{
+                        background: #177245;
                     }
                 }
             }
         }
     }
 }
+

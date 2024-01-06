@@ -7,7 +7,7 @@ nav{
 
     >.aarika{
         width: 15%;
-        color: palevioletred;
+        color: #2E8B57;
         font-weight: 700;
         font-size: 2rem;
     }
@@ -21,11 +21,23 @@ nav{
         padding-top: 0.7rem;
         padding-left: 8rem;
 
+        >.hashes:after{
+            display: block;
+            content: "";
+            background: #2E8B57;
+            height: 3px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+            transition: 0.4s;
+        }
+
         >.hashes:hover{
-            text-decoration: underline;
-            scale: 110%;
-            transition: 0.5s;
-            color: grey;
+            color: green;
+        }
+
+        >.hashes:hover:after{
+            width: 100%;
         }
     }
 

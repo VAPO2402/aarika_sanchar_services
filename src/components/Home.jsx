@@ -138,7 +138,7 @@ const Home = () => {
           </p>
         </div>
         <div className="cards-below">
-          <h1>OUR AARIKA <span>BULK SMS</span> CANa€?T GET EASIER THAN THIS !!!</h1>
+          <h1>OUR AARIKA <span>BULK SMS</span> CANNOT GET EASIER THAN THIS !!!</h1>
           <p>
             With our tool customers can send campaigns which will save their valuable time and has a wonderful feature that will ensure to fetch a high response rate.
           </p>
@@ -190,7 +190,7 @@ const Home = () => {
                   <FontAwesomeIcon icon={faQuinscape} />
                 </div>
                 <div className="text">
-                <span>SMS Attachments</span>
+                <span>SMS Attachments</span><br />
                 File Attachments in SMS Campaign. You can attach Photos, Links, Document, etc., Your files will be securely hosted on our server so you dona€?t have to worry.
                 </div>
               </div>
@@ -215,7 +215,7 @@ const Home = () => {
                 </div>
                 <div className="text">
                 <span>Send via App or Excel</span><br />
-                Send SMS the way you like a€“ via Web Interfacen, App or Excel. We have the best delivery using all medium.
+                Send SMS the way you like via Web Interface, App or Excel. We have the best delivery using all medium.
                 </div>
               </div>
             </div>
@@ -290,8 +290,8 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="red-bar">
-          <h1>Guaranteed Delivery with AARIKA Bulk SMS! Opt in Soon <button>For Free Demo Account</button> </h1>
+        <div className="colour-bar">
+          <h1>Guaranteed Delivery with AARIKA Bulk SMS! Opt in Soon &nbsp;<button>Free Demo Account</button> </h1>
         </div>
         <div className="bulk-sms-process">
           <h1>AARIKA BULKSMS PROCESS.</h1>
@@ -357,7 +357,7 @@ const Home = () => {
           </div>
           <div className="table begin">
             <TableContainer>
-              <Table variant='simple'>
+              <Table variant='simple' colorScheme='whatsapp'>
                 <Thead>
                   <Tr>
                     <Th>Trial Pack</Th>
@@ -444,10 +444,10 @@ const Home = () => {
                     <Th>User Friendly UI</Th>
                   </Tr>
                   <Tr>
-                    <Th><Button colorScheme='blue' size='lg'>Button</Button></Th>
-                    <Th><Button colorScheme='blue' size='lg'>Button</Button></Th>
-                    <Th><Button colorScheme='blue' size='lg'>Button</Button></Th>
-                    <Th><Button colorScheme='blue' size='lg'>Button</Button></Th>
+                    <Th><Button colorScheme='green' size='lg'>Button</Button></Th>
+                    <Th><Button colorScheme='green' size='lg'>Button</Button></Th>
+                    <Th><Button colorScheme='green' size='lg'>Button</Button></Th>
+                    <Th><Button colorScheme='green' size='lg'>Button</Button></Th>
                   </Tr>
                 </Tfoot>
               </Table>
