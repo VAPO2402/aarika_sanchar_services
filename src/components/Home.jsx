@@ -3,17 +3,22 @@ import React, { useRef } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+//scss import
 import '../styles/home.scss'
 
+//images and videos import
 import img7 from '../assets/7.png'
 import imgs2 from '../assets/s2.png'
 import imgs3 from '../assets/s3.png'
 import imgs4 from '../assets/s4.webp'
 import v2 from '../assets/v2.mp4'
+
+//font awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBoxOpen, faChartLine, faClock, faCode, faFileExcel, faIndianRupeeSign, faLocationCrosshairs, faLocationDot, faLock, faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { Select } from '@chakra-ui/react'
+import { faQuinscape } from '@fortawesome/free-brands-svg-icons';
 
+//chakra ui
 import {
   Table,
   Thead,
@@ -24,46 +29,39 @@ import {
   Td,
   TableContainer,
 } from '@chakra-ui/react'
+import { Select, Button} from '@chakra-ui/react'
 
-import { Button } from '@chakra-ui/react'
-import { faQuinscape } from '@fortawesome/free-brands-svg-icons';
-
-import emailjs from '@emailjs/browser';
-
+//heading of the slider
 const headingOptions = {
   pos: 'absolute',
   left: '50%',
-  top: '35%',
+  top: '58%',
   transform: 'translate(-50%,-50%)',
   textTransform: 'uppercase',
   p: '4',
 };
 
+const headingOptions1 = {
+  pos: 'absolute',
+  left: '50%',
+  top: '71%',
+  transform: 'translate(-50%,-50%)',
+  textTransform: 'uppercase',
+  p: '4',
+};
+
+//text below the heading of the slider
 const textOptions = {
   pos: 'absolute',
   left: '50%',
-  top: '50%',
+  top: '75%',
   transform: 'translate(-50%,-50%)',
   textTransform: 'uppercase',
   p: '4',
 };
 
-
-
+//the website is divided into sections for easier use
 const Home = () => {
-
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
 
   return (
     <>
@@ -75,57 +73,68 @@ const Home = () => {
         <div className="features-main-content">
           <h1>Get Introduced to the Best Bulk SMS Provider</h1>
           <p>
-            In the todaya€?s digital world, the availability and use of handheld devices like smart phones, makes the world shrink. It enables people to reach each other in just minutes without many efforts. <br /><br />
+            <span>Welcome to Our Bulk SMS Services</span>  <br /><br />
 
-            Businesses can tap into this opportunity and choose Bulk SMS Service India that offers a wonderful opportunity for many business enterprises to reach their targeted customers instantly in a cost effective way. <br />
-            <br />
+            AARIKA SANCHAR SERVICES  - empowering Communication through Bulk SMS at AARIKA SANCHAR SERVICES, we understand the power of instant and effective communication. As a leading provider of bulk SMS services, we are dedicated to helping businesses and organizations connect with their audiences effortlessly and efficiently. <br />
 
-            So, if the client needs a Bulk SMS Provider India, AARIKA is the best option. We are not only a brand, but a pioneer in the field of SMS service providing. We take pride in saying that we as a successful brand have helped numerous clients to reach out to their targeted customers. We have a track record of meeting the exact criteria, the client asks for. <br />
-            <br />
-            <span>You can get what's best</span> <br />
-            <br />
+            AARIKA SANCHAR SERVICES has emerged as a trusted name in the realm of SMS solutions. Our journey is marked by a commitment to innovation, reliability, and client satisfaction. Over the years, we have become a go-to choice for businesses looking to enhance their communication strategies and engage with their target demographic in a meaningful way. <br /><br />
 
-            When it comes to choosing a Bulk SMS Provider India, you will come across quite a few companies that offer sms services at reasonably low cost. However, their approaches arent that professional when it comes to Bulk SMS in India. <br />
-            <br />
+            <span>What Sets Us Apart</span> <br />
 
-            So, we request you to stay away from them and get in touch with us as we are heavily committed to providing the best services to clients. <br />
-            <br />
+            Our platform leverages cutting-edge technology to ensure seamless and reliable SMS delivery. Whether you are sending promotional messages, alerts, or transactional notifications, our robust infrastructure guarantees swift and secure communication. <br />
 
-            <span>Our Specialties</span> <br />
-            <br />
+            Two-Way Communication we believe in fostering meaningful interactions. Our two-way SMS capabilities allow businesses to not only broadcast messages but also engage in real-time conversations. Receive feedback, answer queries, and build lasting relationships with your audience. <br /> <br />
 
-            You will reach the target audience in a short span of time- With unlimited validity, Customer sender ID, Powerful Web APIa€?s, we deliver Bulk SMS in India to DND numbers, without hidden charges. <br />
-            <br />
+            <span>Our Mission</span> <br />
 
-            Our team guarantees you that your SMS will be delivered on time- We engage the customers with our promotional and transactional SMS. <br />
-            <br />
+            At AARIKA SANCHAR SERVICES, our mission is to empower businesses with the tools they need to succeed in an increasingly competitive and fast-paced digital landscape. We aim to be the driving force behind effective communication strategies, providing our clients with the means to connect, engage, and thrive. <br /> <br />
 
-            <span>We are the Game-changers</span> <br />
-            <br />
+            <span>Why Choose US</span><br />
 
-            1. The Delivery goes round the clock- Our entire team makes sure to deliver the SMS tool, irrespective of the time zones. Delivery is very important for all the clients and we at AARIKA, with our Bulk SMS Service Banglore, India are known for our instant deliverability on the go. <br />
-            <br />
+            We are committed to providing cutting-edge technology, global reach, and dedicated support to meet your communication needs. <br /><br />
 
-            2. Reliable Pricing Options- We at AARIKA provide the best and reliable pricing options for Bulk SMS in India packages, and help to promote the business online. <br />
-            <br />
+            <ul>
+              <li> <br />
+                <span>Reliability:</span> &nbsp; Count on us for secure and reliable SMS delivery.
+              </li>
+              <li> <br />
+                <span>Real Time Delivery:</span> &nbsp; We provide a real-time delivery with a single click of your SMS campaigns. Our Server architecture is designed to scale million SMSs in a go. We deliver 2 million SMSs per day.
+              </li>
+              <li> <br />
+                <span>Instant Account Activation:</span> &nbsp; On Signup and payment made, we shall share you the credentials instantly where you can start the marketing & advertisement activities.
+              </li>
+              <li> <br />
+                <span>Real Time Delivery:</span> &nbsp; We will be delivering the SMS tool regardless of time zones globally. Delivery is important for all the customers and we do instant deliverability on the go.
+              </li>
+              <li> <br />
+                <span>API Support:</span> &nbsp; Developers can integrate our SMS Tool API to send Messages from different websites & mobile applications.
+              </li>
+              <li> <br />
+                <span>Track Campaign Metrics:</span> &nbsp; Access granular click reports for all your marketing web links, attachments and more. Get detailed reports on the click through rates of your campaigns, who opened the links at what time, location details and device characteristics.
+              </li>
+              <li> <br />
+                <span>No Setup costs:</span> &nbsp; No Hidden or Setup costs involved. Pay for the Packages and Enjoy the service.
+              </li>
+              <li> <br />
+                <span>Smart Tracking:</span> &nbsp; Monitor the SMS Delivered / Failure status, keep a complete track on each and every SMS logs
+              </li>
+              <li> <br />
+                <span>Innovation:</span> &nbsp; Stay ahead with our innovative features and solutions.
+              </li>
+              <li> <br />
+                <span>Global Reach:</span> &nbsp; Reach audiences around the world with our expansive network.
+              </li>
+              <li> <br />
+                <span>Dedicated Support:</span> &nbsp; Our customer support team is always ready to assist you.
+              </li>
+            </ul>
+            <br /> <br />
 
-            3. Unicode SMS service- Local language SMS increases the ROI, up to 50% instead of English SMS, and provides a Unicode Options to advertise. <br />
-            <br />
+            <span>Join Us in Redefining Communication</span><br />
 
-            4. SMS attachments- This is called as File Attachments in SMS Campaign. The client can attach photos, links, documents, etc. The file(s) will be securely hosted on our server, so the clients need not worry. <br />
-            <br />
+            Whether you are a small business, enterprise, or nonprofit organization, AARIKA SANCHAR SERVICES is here to elevate your communication game. Join us in redefining the way you connect with your audience through the power of bulk SMS.
 
-            <span>Our USP as a Bulk SMS Service Provider</span> <br />
-            <br />
-
-            1. We as a brand for Bulk SMS Service Bangalore, India is highly profitable to marketers and business managers, bulk SMS reach out to a wide range of people, and goes beyond the geographical limitations. <br />
-            <br />
-
-            2. Our network for Bulk SMS in India allows reaching out to the customers directly, along with keeping them updated with new and fresh arrivals and offers. <br />
-            <br />
-
-            The brand 'AARIKA', truly justifies the connotation of its name, thata€?s, to connect people. We are undoubtedly the best Bulk SMS Provider Banglore, India. Get in touch with us today and we will be more than happy to help you out. <br />
-            <br />
+            Get started today and witness the impact of seamless and efficient communication with AARIKA SANCHAR SERVICES.
           </p>
         </div>
         <div className="cards-below">
@@ -490,7 +499,7 @@ const Home = () => {
           <span>AVAILABLE FROM 10AM - 8PM</span> <br />
           </div>
           <div className="details-input">
-            <form ref={form} onSubmit={sendEmail}>
+            <form>
               <div className="text">
                 <span>TRY OUR FREE DEMO ACCOUNT</span><br />
                 Fill in the below details to send a Free Demo Account Credentials.
@@ -534,6 +543,7 @@ const Home = () => {
   )
 }
 
+//slider details
 const MyCarousel = () => (
   <Carousel
     infiniteLoop
@@ -545,25 +555,25 @@ const MyCarousel = () => (
   >
     <Box w="full" h={'100vh'} display={'block'}>
       <Image src={imgs2} h="95vh" w={'full'} objectFit={'cover'} />
-      <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
+      <Heading borderRadius={'20'} bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
         Mission
       </Heading>
-      <Text bgColor={'blackAlpha.600'} color={'white'} {...textOptions}>
+      <Text borderRadius={'20'} bgColor={'blackAlpha.600'} color={'white'} {...textOptions}>
         Our mission is to empower businesses with the tools they need to succeed in an increasingly competitive and fast-paced digital landscape. We aim to be the driving force behind effective communication strategies, providing our clients with the means to connect, engage, and thrive.
       </Text>
     </Box>
     <Box w="full" h={'100vh'} display={'block'}>
       <Image src={imgs3} h="95vh" w={'full'} objectFit={'cover'} />
-      <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
+      <Heading borderRadius={'20'} bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
         100% your SMS will deliver. We Guarantee !
       </Heading>
-      <Text bgColor={'blackAlpha.600'} color={'white'} {...textOptions}>
+      <Text borderRadius={'20'} bgColor={'blackAlpha.600'} color={'white'} {...textOptions}>
         Whether you are a small business, enterprise, or nonprofit organization, we are here to elevate your communication game. Join us in redefining the way you connect with your audience through the power of bulk SMS.
       </Text>
     </Box>
     <Box w="full" h={'100vh'} display={'block'}>
       <Image src={imgs4} h="95vh" w={'full'} objectFit={'cover'} />
-      <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
+      <Heading borderRadius={'20'} bgColor={'blackAlpha.600'} color={'white'} {...headingOptions1}>
         Get started today and witness the impact of seamless and efficient communication with us.
       </Heading>
     </Box>

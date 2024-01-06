@@ -30,6 +30,20 @@ main{
 
                 >span{
                     font-weight: bolder;
+                    color: dimgrey;
+                }
+
+                >ul{
+                    list-style-type: none;
+                    text-align: left;
+
+                    >li{
+
+                        >span{
+                            font-weight: bolder;
+                            color: dimgrey;
+                        }
+                    }
                 }
             }
         }
@@ -83,9 +97,8 @@ main{
 
                     >.logo{
                         font-size: 3rem;
-                        color: palevioletred;
+                        color: #2E8B57;
                         background: transparent;
-                        margin-left: -8rem;
                         margin-top: -2rem;
                         
                     }
@@ -135,9 +148,8 @@ main{
 
                     >.logo{
                         font-size: 3rem;
-                        color: palevioletred;
+                        color: #2E8B57;
                         background: transparent;
-                        margin-left: -8rem;
                         margin-top: -2rem;
                         
                     }
@@ -187,9 +199,8 @@ main{
 
                     >.logo{
                         font-size: 3rem;
-                        color: palevioletred;
+                        color: #2E8B57;
                         background: transparent;
-                        margin-left: -8rem;
                         margin-top: -2rem;
                         
                     }
@@ -256,12 +267,12 @@ main{
         }
 
         >.red-bar{
-            background: palevioletred;
+            background: #2E8B57;
             padding: 3rem 9rem;
 
             >h1{
                 display: flex;
-                background: palevioletred;
+                background: #2E8B57;
                 font-size: 2rem;
                 font-weight: 500;
                 color: white;
