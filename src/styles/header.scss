@@ -100,7 +100,6 @@ label #cancel{
 
 nav{
     @include breakpoint(xs){
-        background: blue;
         
         >.aarika{
             margin-left: 0rem;
@@ -114,7 +113,6 @@ nav{
     }
     
     @include breakpoint(xs2){
-        background: red;
         
         >.aarika{
             font-size: 2.5rem;
