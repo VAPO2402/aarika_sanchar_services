@@ -551,29 +551,29 @@ const MyCarousel = () => (
     showStatus={false}
     showThumbs={false}
     showArrows={true}
-    
+    autoPlay
   >
     <Box w="full" h={'100vh'} display={'block'}>
       <Image src={imgs2} h="95vh" w={'full'} objectFit={'cover'} />
-      <Heading borderRadius={'20'} bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
+      <Heading borderRadius={'20'} bgColor={'blackAlpha.600'} color={'black'} {...headingOptions}>
         Mission
       </Heading>
-      <Text borderRadius={'20'} bgColor={'blackAlpha.600'} color={'white'} {...textOptions}>
+      <Text borderRadius={'20'} bgColor={'blackAlpha.600'} color={'black'} {...textOptions}>
         Our mission is to empower businesses with the tools they need to succeed in an increasingly competitive and fast-paced digital landscape. We aim to be the driving force behind effective communication strategies, providing our clients with the means to connect, engage, and thrive.
       </Text>
     </Box>
     <Box w="full" h={'100vh'} display={'block'}>
       <Image src={imgs3} h="95vh" w={'full'} objectFit={'cover'} />
-      <Heading borderRadius={'20'} bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
+      <Heading borderRadius={'20'} bgColor={'blackAlpha.600'} color={'black'} {...headingOptions}>
         100% your SMS will deliver. We Guarantee !
       </Heading>
-      <Text borderRadius={'20'} bgColor={'blackAlpha.600'} color={'white'} {...textOptions}>
+      <Text borderRadius={'20'} bgColor={'blackAlpha.600'} color={'black'} {...textOptions}>
         Whether you are a small business, enterprise, or nonprofit organization, we are here to elevate your communication game. Join us in redefining the way you connect with your audience through the power of bulk SMS.
       </Text>
     </Box>
     <Box w="full" h={'100vh'} display={'block'}>
       <Image src={imgs4} h="95vh" w={'full'} objectFit={'cover'} />
-      <Heading borderRadius={'20'} bgColor={'blackAlpha.600'} color={'white'} {...headingOptions1}>
+      <Heading borderRadius={'20'} bgColor={'blackAlpha.600'} color={'black'} {...headingOptions1}>
         Get started today and witness the impact of seamless and efficient communication with us.
       </Heading>
     </Box>
